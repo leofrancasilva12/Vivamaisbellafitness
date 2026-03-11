@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viva Mais Bela + Herbalife — Queime Gordura com Energia</title>
+
+  <!-- Open Graph / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Viva Mais Bela Fitness">
+  <meta property="og:title" content="Viva Mais Bela + Herbalife — Queime Gordura com Energia">
+  <meta property="og:description" content="Transforme seu corpo com o protocolo natural Viva Mais Bela + Herbalife. Shape Control® para queimar gordura, Hype Drink para ter energia. Reduza medidas, acelere o metabolismo e conquiste o corpo que você merece!">
+  <meta property="og:image" content="https://vivamaisbella.online/img/preview.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Viva Mais Bela + Herbalife — Protocolo Natural">
+  <meta property="og:url" content="https://vivamaisbella.online/">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Viva Mais Bela + Herbalife — Queime Gordura com Energia">
+  <meta name="twitter:description" content="Conheça o protocolo completo: Shape Control® + Hype Drink. Reduza medidas, acelere o metabolismo e tenha energia o dia todo.">
+  <meta name="twitter:image" content="https://vivamaisbella.online/img/preview.jpg">
+
+  <!-- SEO -->
+  <meta name="description" content="Conheça o protocolo completo Viva Mais Bela + Herbalife: Shape Control® + Hype Drink. Reduza medidas, acelere o metabolismo e tenha energia o dia todo.">
+  <meta name="keywords" content="herbalife, emagrecer, queimar gordura, shape control, hype drink, protocolo natural">
+  <link rel="canonical" href="https://vivamaisbella.online/">
+  <meta name="theme-color" content="#1a3a2a">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/1000552527-removebg-preview.png">
+  <link rel="apple-touch-icon" href="img/1000552527-removebg-preview.png">
+  
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --green-dark: #1a3a2a;
+      --green-mid: #2d6a4f;
+      --green-light: #52b788;
+      --green-soft: #95d5b2;
+      --cream: #f8f4ef;
+      --warm-white: #fdfaf7;
+      --text-dark: #1c1c1c;
+      --text-mid: #4a4a4a;
+      --gold: #c9a84c;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      background: var(--green-dark);
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      overflow: hidden;
+    }
+
+    .hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      opacity: .88;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom,
+          rgba(26, 58, 42, 0.3) 0%,
+          rgba(26, 58, 42, 0.15) 40%,
+          rgba(26, 58, 42, 0.92) 85%,
+          rgba(26, 58, 42, 1) 100%);
+    }
+
+
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 2rem 1.5rem 2.5rem;
+      width: 100%;
+      max-width: 520px;
+    }
+
+    .badge {
+      display: table;
+      margin: 0 auto 0.5rem;
+      /* Centralized and closer to title */
+      background: var(--gold);
+      color: #fff;
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: .35rem .9rem;
+      border-radius: 100px;
+      animation: fadeUp .6s ease both;
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.4rem, 5vw, 2.2rem);
+      line-height: 1.15;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      display: block;
+      margin-top: .5rem;
+      animation: fadeUp .7s .1s ease both;
+    }
+
+    .hero-title span {
+      color: var(--green-soft);
+    }
+
+    .hero-fitness-tag {
+      position: absolute;
+      font-style: italic;
+      color: var(--gold);
+      font-size: .65em;
+      letter-spacing: .06em;
+      right: -1.5rem;
+      top: 1.1em;
+      /* Adjusted to look better with new badge position */
+    }
+
+    /* Ajustes apenas para Mobile */
+    @media (max-width: 767px) {
+      .hero-title {
+        display: inline-block;
+        padding: 0 1rem;
+      }
+
+      .hero-fitness-tag {
+        right: -0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-fitness-tag {
+        right: 0.2rem;
+        font-size: 0.55em;
+      }
+    }
+
+    .hero-sub {
+      margin-top: .75rem;
+      font-size: 1rem;
+      color: rgba(255, 255, 255, .78);
+      font-weight: 300;
+      animation: fadeUp .7s .2s ease both;
+    }
+
+    .btn-hero {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      margin-top: 1.75rem;
+      background: var(--green-light);
+      color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: .9rem 2rem;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: background .25s, transform .2s;
+      animation: fadeUp .7s .3s ease both;
+    }
+
+    .btn-hero:hover {
+      background: var(--green-mid);
+      transform: translateY(-2px);
+    }
+
+    /* ── SECTION SHARED ── */
+    .section {
+      padding: 4rem 1.25rem 2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--green-mid);
+      margin-bottom: .6rem;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 6vw, 2.4rem);
+      line-height: 1.15;
+      color: var(--green-dark);
+    }
+
+    .section-sub {
+      margin-top: .6rem;
+      font-size: .95rem;
+      color: var(--text-mid);
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    /* ── PRODUCT CARD ── */
+    .cards-wrap {
+      padding: 0 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      margin-top: 3.5rem;
+    }
+
+    .product-card {
+      background: var(--warm-white);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 4px 28px rgba(26, 58, 42, .09);
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      transition: transform .3s, box-shadow .3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 40px rgba(26, 58, 42, .14);
+    }
+
+    .product-img-wrap {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+    }
+
+    .product-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transition: transform .5s ease;
+    }
+
+    .product-card:hover .product-img-wrap img {
+      transform: scale(1.04);
+    }
+
+    .product-body {
+      padding: 1.75rem 1.5rem 2rem;
+    }
+
+    .product-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--green-dark);
+    }
+
+    .product-tagline {
+      font-size: .88rem;
+      color: var(--green-mid);
+      font-weight: 500;
+      margin-top: .3rem;
+    }
+
+    .product-desc {
+      font-size: .9rem;
+      color: var(--text-mid);
+      line-height: 1.65;
+      margin-top: .9rem;
+      font-weight: 300;
+    }
+
+    .benefits {
+      list-style: none;
+      margin-top: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: .55rem;
+    }
+
+    .benefits li {
+      display: flex;
+      align-items: flex-start;
+      gap: .6rem;
+      font-size: .88rem;
+      color: var(--text-dark);
+      line-height: 1.5;
+    }
+
+    .benefits li::before {
+      content: '';
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--green-light);
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 10l3.5 3.5L15 7' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-size: contain;
+      margin-top: 1px;
+    }
+
+    .benefits li strong {
+      color: var(--green-dark);
+    }
+
+
+
+    .product-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      font-style: italic;
+      color: var(--green-dark);
+      margin-top: 1.25rem;
+      margin-bottom: .1rem;
+      text-align: center;
+    }
+
+    .combo-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      font-style: italic;
+      color: #fff;
+      margin-top: 1rem;
+      margin-bottom: .25rem;
+      text-align: center;
+    }
+
+    .combo-bonus {
+      background: rgba(201, 168, 76, .15);
+      border: 1px solid rgba(201, 168, 76, .45);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      margin-top: 1.25rem;
+      font-size: .95rem;
+      font-weight: 600;
+      color: var(--gold);
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .btn-buy {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .45rem;
+      width: 100%;
+      margin-top: 1rem;
+      padding: 1rem;
+      background: var(--green-dark);
+      color: #fff;
+      border-radius: 100px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .97rem;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: .02em;
+      transition: background .25s, transform .2s;
+    }
+
+    .btn-buy:hover {
+      background: var(--green-mid);
+      transform: translateY(-2px);
+    }
+
+    /* ── COMBO ── */
+    .combo-section {
+      background: var(--green-dark);
+      padding: 3.5rem 1.25rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .combo-section::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: rgba(82, 183, 136, .08);
+    }
+
+    .combo-section::after {
+      content: '';
+      position: absolute;
+      bottom: -80px;
+      left: -40px;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background: rgba(82, 183, 136, .06);
+    }
+
+    .combo-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .combo-section .section-label {
+      color: var(--green-soft);
+    }
+
+    .combo-section .section-title {
+      color: #fff;
+    }
+
+    .combo-img-wrap {
+      margin: 2rem 0;
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+    }
+
+    .combo-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .combo-benefits {
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: 16px;
+      padding: 1.25rem;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .65rem;
+      margin-top: 1.5rem;
+    }
+
+    .combo-benefits li {
+      display: flex;
+      align-items: flex-start;
+      gap: .6rem;
+      font-size: .9rem;
+      color: rgba(255, 255, 255, .82);
+      line-height: 1.5;
+    }
+
+    .combo-benefits li::before {
+      content: '✦';
+      color: var(--gold);
+      flex-shrink: 0;
+      font-size: .7rem;
+      margin-top: .2rem;
+    }
+
+
+
+    .btn-combo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      width: 100%;
+      margin-top: 1.5rem;
+      padding: 1.1rem;
+      background: var(--green-light);
+      color: #fff;
+      border-radius: 100px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: .02em;
+      transition: background .25s, transform .2s;
+    }
+
+    .btn-combo:hover {
+      background: var(--green-soft);
+      transform: translateY(-2px);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 2.5rem 1.25rem;
+      background: #111;
+      color: rgba(255, 255, 255, .35);
+      font-size: .78rem;
+      line-height: 1.8;
+    }
+
+    footer strong {
+      color: rgba(255, 255, 255, .6);
+    }
+
+    footer a {
+      color: var(--green-soft);
+      text-decoration: none;
+    }
+
+    .sep {
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--green-soft), transparent);
+      opacity: .25;
+      margin: 4rem 2rem;
+    }
+
+    /* Ajustes Mobile Adicionais */
+    @media (max-width: 767px) {
+      .section {
+        padding: 3rem 1.25rem 1.5rem;
+      }
+
+      .cards-wrap {
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .sep {
+        margin: 2rem 2rem;
+      }
+
+      .product-card {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    /* ── LOGO TOPO ── */
+    .hero-logo {
+      position: absolute;
+      top: 1.2rem;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      width: 90px;
+      margin: 0 auto;
+      animation: fadeUp .5s ease both;
+    }
+
+    .hero-logo img {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+    }
+
+    /* ── TABLET (768px+) ── */
+    @media (min-width: 768px) {
+      .hero-content {
+        max-width: 700px;
+        padding: 3rem 2rem 4rem;
+      }
+
+      .hero-title {
+        font-size: 3.8rem;
+      }
+
+      .hero-sub {
+        font-size: 1.1rem;
+      }
+
+      .section {
+        max-width: 800px;
+        padding: 5rem 2rem 2.5rem;
+      }
+
+      .cards-wrap {
+        flex-direction: column;
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .product-card {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .combo-section {
+        padding: 5rem 2rem;
+      }
+
+      .combo-inner {
+        max-width: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 3rem;
+        align-items: start;
+      }
+
+      .combo-inner>.reveal:first-child {
+        grid-column: 1 / 2;
+      }
+
+      .combo-img-wrap {
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+        margin: 0;
+      }
+
+      .combo-benefits {
+        grid-column: 1 / 2;
+      }
+
+      .btn-combo {
+        grid-column: 1 / 2;
+      }
+    }
+
+    /* ── DESKTOP (1024px+) ── */
+    @media (min-width: 1024px) {
+      .hero-content {
+        max-width: 860px;
+        padding: 3rem 2rem 5rem;
+      }
+
+      .hero-title {
+        font-size: 5rem;
+      }
+
+      .hero-sub {
+        font-size: 1.2rem;
+        max-width: 560px;
+        margin: .75rem auto 0;
+      }
+
+      .section {
+        max-width: 1100px;
+        padding: 6rem 2rem 3rem;
+        text-align: center;
+      }
+
+      .cards-wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 3rem;
+      }
+
+      /* Card horizontal: imagem à esquerda, texto à direita */
+      .product-card {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 1100px;
+        border-radius: 24px;
+        overflow: hidden;
+      }
+
+      .product-card .product-img-wrap {
+        width: 45%;
+        flex-shrink: 0;
+        aspect-ratio: auto;
+        min-height: 420px;
+      }
+
+      .product-card .product-body {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3rem;
+      }
+
+      /* Hype Drink: imagem à direita */
+      .product-card--reverse {
+        flex-direction: row-reverse;
+      }
+
+      .product-name {
+        font-size: 2rem;
+      }
+
+      .product-desc {
+        font-size: 1rem;
+      }
+
+      .benefits li {
+        font-size: .95rem;
+      }
+
+      .combo-inner {
+        max-width: 1000px;
+        gap: 0 4rem;
+      }
+
+      footer {
+        font-size: .85rem;
+        padding: 3rem 2rem;
+      }
+    }
+
+    /* ── WIDE (1280px+) ── */
+    @media (min-width: 1280px) {
+      .cards-wrap {
+        max-width: 1200px;
+      }
+
+      .product-card {
+        max-width: 1200px;
+      }
+
+      .product-card .product-img-wrap {
+        width: 40%;
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(22px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity .6s ease, transform .6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-img" src="img/IMG-20260309-WA0029.jpg" alt="Viva Mais Bela + Herbalife">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="badge">🌿 Protocolo Natural</span>
+      <h1 class="hero-title">
+        Viva Mais Bella<br>
+        <em class="hero-fitness-tag">Fitness</em>
+        <span>+ Herbalife</span>
+      </h1>
+      <p class="hero-sub">Seu protocolo completo para queimar gordura, ter energia e conquistar o corpo que você merece.
+      </p>
+      <a href="#produtos" class="btn-hero">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M12 5v14M5 12l7 7 7-7" />
+        </svg>
+        Ver os produtos
+      </a>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section" id="produtos">
+    <div class="reveal">
+      <span class="section-label">Nossos produtos</span>
+      <h2 class="section-title">Resultados reais,<br>de dentro pra fora.</h2>
+      <p class="section-sub">Escolha o produto ideal para a sua meta — ou aproveite o combo completo com desconto.</p>
+    </div>
+  </section>
+
+  <!-- Bebida Detox -->
+  <div class="cards-wrap">
+    <div class="product-card reveal">
+      <div class="product-img-wrap">
+        <img src="img/IMG-20260309-WA0083.jpg" alt="Bebida Detox Natural Herbalife" loading="lazy">
+      </div>
+      <div class="product-body">
+        <p class="product-tagline">Bebida detox natural · 500ml · Rotina de 5 dias</p>
+        <h3 class="product-name">Bebida Detox Natural</h3>
+        <p class="product-desc">
+          Suplemento ideal para uma rotina de limpeza profunda e revitalização. Com coloração natural sugerindo extratos
+          vegetais potentes, é o aliado perfeito para quem busca desintoxicar o organismo e recuperar a leveza.
+          <strong>(5 garrafas)</strong>
+        </p>
+        <ul class="benefits">
+          <li><span><strong>Mais energia:</strong> promete aumentar a disposição ao longo de todo o dia.</span></li>
+          <li><span><strong>Mais disposição:</strong> melhora significativa do bem-estar e vitalidade geral.</span></li>
+          <li><span><strong>Reduz inchaço:</strong> um dos principais destaques para quem busca leveza abdominal.</span>
+          </li>
+          <li><span><strong>Retenção de líquidos:</strong> auxilia o corpo a eliminar o excesso de água
+              acumulado.</span></li>
+          <li><span><strong>Transformação em 5 dias:</strong> proposta de resultados rápidos com uso diário
+              sugerido.</span></li>
+        </ul>
+        <a href="https://wa.me/5571991158054?text=Oi%20Rauana%2C%20tenho%20interesse%20na%20Bebida%20Detox%20Natural."
+          class="btn-buy" target="_blank">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sep"></div>
+
+  <!-- Shape Control -->
+  <div class="cards-wrap">
+    <div class="product-card reveal">
+      <div class="product-img-wrap">
+        <img src="img/IMG-20260309-WA0017.jpg" alt="Shape Control Herbalife com Morosil" loading="lazy">
+      </div>
+      <div class="product-body">
+        <p class="product-tagline">Suplemento alimentar · 30 cápsulas</p>
+        <h3 class="product-name">Shape Control®</h3>
+        <p class="product-desc">
+          Fórmula natural com <strong>Morosil®</strong> (extrato da Laranja Moro) e <strong>Cromo</strong> — combinação
+          potente para reduzir medidas, controlar o apetite e acelerar o metabolismo de forma segura.
+        </p>
+        <ul class="benefits">
+          <li><span><strong>Redução de medidas:</strong> auxilia na queima de gordura abdominal, cintura e
+              quadril.</span></li>
+          <li><span><strong>Quebra de gordura:</strong> favorece a lipólise e inibe a formação de novas células de
+              gordura.</span></li>
+          <li><span><strong>Controle do apetite:</strong> o Cromo equilibra a glicose e reduz a fome ao longo do
+              dia.</span></li>
+          <li><span><strong>Metabolismo ativo:</strong> suporte ao metabolismo de proteínas, carboidratos e
+              gorduras.</span></li>
+          <li><span><strong>Ação antioxidante:</strong> fitonutrientes que combatem o estresse oxidativo.</span></li>
+        </ul>
+        <a href="https://wa.me/5571991158054?text=Oi%20Rauana%2C%20tenho%20interesse%20no%20Shape%20Control."
+          class="btn-buy" target="_blank">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Hype Drink -->
+  <div class="cards-wrap">
+    <div class="product-card product-card--reverse reveal">
+      <div class="product-img-wrap">
+        <img src="img/IMG-20260309-WA0018.jpg" alt="Hype Drink Herbalife Termogênico" loading="lazy">
+      </div>
+      <div class="product-body">
+        <p class="product-tagline">Bebida funcional · Baixa caloria · 500ml</p>
+        <h3 class="product-name">Hype Drink</h3>
+        <p class="product-desc">
+          A bebida que você precisa antes do treino ou no dia a dia. Combinação de <strong>N-R-G</strong> (Guaraná),
+          <strong>Herbal Concentrate</strong>, <strong>Liftoff</strong> e <strong>CR7 Drive</strong> — energia, foco e
+          recuperação em um único produto. <strong>(6 Garrafas)</strong>
+        </p>
+        <ul class="benefits">
+          <li><span><strong>Energia e foco:</strong> cafeína e taurina para eliminar o cansaço e aumentar a
+              disposição.</span></li>
+          <li><span><strong>Concentração:</strong> auxilia o estado de alerta para trabalho, estudos e atividade
+              física.</span></li>
+          <li><span><strong>Ação termogênica:</strong> acelera o metabolismo e contribui para a queima de
+              gordura.</span></li>
+          <li><span><strong>Hidratação pós-treino:</strong> eletrólitos que recuperam o corpo depois do esforço.</span>
+          </li>
+          <li><span><strong>Levinha e refrescante:</strong> preparada sem açúcar, perfeita para qualquer hora.</span>
+          </li>
+        </ul>
+        <a href="https://wa.me/5571991158054?text=Oi%20Rauana%2C%20tenho%20interesse%20no%20Hype%20Drink."
+          class="btn-buy" target="_blank">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMBO -->
+  <section class="combo-section" id="combo">
+    <div class="combo-inner">
+      <div class="reveal">
+        <span class="section-label">🔥 Oferta especial</span>
+        <h2 class="section-title">Protocolo Viva<br>Mais Bella!</h2>
+        <p class="section-sub" style="color:rgba(255,255,255,.62);">Shape Control® + Hype Drink juntos — metabolismo
+          acelerado, energia no dia a dia e controle de gordura em um só protocolo.</p>
+      </div>
+
+      <div class="combo-img-wrap reveal">
+        <img src="img/IMG-20260309-WA0016.jpg" alt="Combo Viva Mais Bela Herbalife Completo" loading="lazy">
+      </div>
+
+      <ul class="combo-benefits reveal">
+        <li>Mais energia e disposição para treinos e vida ativa</li>
+        <li>Aceleração do metabolismo e suporte à queima de gordura</li>
+        <li>Controle do apetite e melhor equilíbrio metabólico</li>
+        <li>Hidratação e reposição de eletrólitos incluídos</li>
+        <li>Combinação prática para quem busca resultado real</li>
+      </ul>
+
+      <div class="combo-bonus reveal">
+        ⚡️ Ganhe de Bônus o kit detox Start 5 dias para desinchar!
+      </div>
+
+
+      <a href="https://wa.me/5571991158054?text=Oi%20Rauana%2C%20tenho%20interesse%20no%20Combo%20Shape%20Control%20%2B%20Hype%20Drink."
+        class="btn-combo reveal" target="_blank">
+        Saiba mais
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <img src="img/1000552527-removebg-preview.png" alt="Logo Viva Mais Bela"
+      style="width:70px;opacity:.55;margin-bottom:.75rem;display:block;margin-left:auto;margin-right:auto;">
+    <strong>Viva Mais Bella <em style="font-style:italic; color:var(--gold);">Fitness</em></strong><br>
+    © 2026 Viva Mais Bella. Todos os direitos reservados.<br>
+    <a href="#">Termos e Condições</a> · <a href="#">Política de Privacidade</a>
+  </footer>
+
+  <script>
+    const els = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(el => io.observe(el));
+  </script>
+</body>
+
+</html>
